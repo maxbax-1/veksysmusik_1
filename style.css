@@ -1,0 +1,134 @@
+html,body {
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    background: linear-gradient(40deg, #186646, #09422f,#32775a);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    flex: 1;
+}
+    h1 {
+      color: #0356a8;
+      text-align: center;
+    }
+
+.album-cover {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px;
+    }
+
+p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+    }
+
+ul {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      font-size: 16px;
+    }
+ul {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      font-size: 16px;
+    }
+
+a {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      height: 70px;
+      color: #a1e92d;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+a:hover {
+      color: #ff6f00;
+      text-decoration: underline;
+
+    }
+.album-cover_1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 60px auto 30px auto;
+      max-width: 300px;
+      height: 70px;
+      border: 5px solid #003366;
+      border-radius: 10px;
+      padding: 2px;
+      background-color: rgb(84, 105, 97);
+      text-align: center;
+    }
+.music_list{
+  border: 2px darkgray;  
+  margin: 20px auto;
+  background-color: darkgray;
+  cursor: pointer;
+
+}
+header , footer{
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(40deg, #0a1f1f , rgba(73, 126, 124, 0.678));
+    width: 100%;
+    height: 150px;
+}
+footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: red;
+    background: #333; 
+    height: 10%; 
+}
+.descp{
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 4px;
+    background: linear-gradient(75deg, #063018 , #373a8a);
+    border-radius: 20px;
+    
+}
+.block p {
+  font-size: 20px;
+  color: #4b9f65;
+  font-family: Arial;
+  text-align: center center;
+  text-transform: capitalize;
+  text-decoration: solid;
+}
+.descp_list ul , li {
+    border: 4px;
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 4px;
+    padding-left: 20px;
+    list-style: georgian;
+    background: linear-gradient(75deg, #1b5f32 , #09335f);
+    border-radius: 20px;
+    color: #5befb2;
+}
+audio {
+ width: 500px;
+ height: 60px;
+}
+li{
+  background: linear-gradient(75deg, #306d44 , #38618a);
+}
+h3{
+  color: #5befb2;
+  text-align: center ;
+}
