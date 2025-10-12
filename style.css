@@ -138,7 +138,7 @@ li {
 }
 
 audio {
-    width: 500px;
+    max-width: 600vh;
     height: 60px;
 }
 
