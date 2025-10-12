@@ -1,0 +1,90 @@
+<div>
+                <div id="div_text1" class="descp , block">
+                    <p>
+                        "«Модна країна» — студійний альбом гурту Скрябін, випущений у 2000 році. Він поєднує електроніку та поп-рок, з притаманною гурту іронією та сатирою./br Пісні торкаються соціальних тем і сучасного життя українців, висвітлюючи моду, споживацтво та прагнення
+                        до швидкого успіху. Музично альбом відзначається динамічними мелодіями, гітарними рифами та синтезаторними партіями, а деякі треки стали популярними на радіо та телебаченні."
+                    </p>
+                </div>
+            </div>
+
+<p><span class="span-1" ><strong>Скрябін (Андрій Кузьменко)</strong></span> — український співак, музикант, письменник, телеведучий та продюсер.
+                Народився 17 серпня 1968 року в місті Самбір, Львівська область.
+                Найбільше відомий як лідер гурту «Скрябін», який було засновано в 1989 році.
+                Його творчість охоплює широкий спектр жанрів — від синтез-попу до рок-музики.
+                Скрябін прославився не лише музикою, а й своєю щирістю, гумором та активною громадянською позицією. У 2006 році видав автобіографічну книгу «Я, "Побєда" і Берлін», яка стала бестселером.Загинув у автокатастрофі 2 лютого 2015 року.Його творчість і постать залишили глибокий слід в українській культур
+            </p>
+
+<a class="album-cover_1" href="https://www.youtube.com/watch?v=u3pZrgOvL1I&list=PL6qaYpQMdDXtgPYIyUguZH0Vxv9d3-rHO" target="_blank">
+    Слухати альбом на YouTube
+  </a>
+
+
+  <img class="album-cover" id="imgg" src="https://i.scdn.co/image/ab67616d00001e0209b7e1fc9e907e6c813185aa" alt="Обкладинка альбому Модна країна">
+        
+
+.descp {
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 2%;
+    background: linear-gradient(75deg, #063018, #373a8a);
+    border-radius: 20px;
+}
+
+
+@media (max-width:768px) {
+    #div_text1 {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 2%;
+    }
+    .block p {
+        font-size: 16px;
+    }
+    .album-cover_1 {
+        margin-left: 36%;
+        margin-right: 36%;
+        font-size: 14px;
+        width: 200px;
+        height: 50px;
+    }
+    .descp_list {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    audio {
+        width: 300px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1404px) {
+    .album-cover_1 {
+        margin-left: 43%;
+        margin-right: 45%;
+        font-size: 22px;
+        width: 425px;
+        height: 90px;
+    }
+    .descp_list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .web_flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    #imgg {
+        margin: 0%;
+    }
+    .album-cover {
+        width: 525px;
+        height: 500px;
+    }
+}
