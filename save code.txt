@@ -88,3 +88,65 @@
         height: 500px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.descp {
+    /* two-column layout with 4% side margins
+       default each occupies 45% (leaving space for padding/gaps)
+       variables allow hover to switch to 75%/25% without JS */
+    --list-w: 45%;
+    --album-w: 45%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 4%; /* 4% side margins */
+    overflow: visible; /* allow hovered item to expand outward */
+}
+
+/* when hovering one child, change variables on the parent (requires browsers with :has support) */
+.descp:has(.descp_list:hover) {
+    --list-w: 75%;
+    --album-w: 25%;
+}
+.descp:has(.descp_album:hover) {
+    --list-w: 25%;
+    --album-w: 75%;
+}
+
+/* Fallback for browsers without :has(): hovering the left column will expand it and shrink the right using sibling selector */
+.descp_list:hover + .descp_album {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+}
+.descp_list:hover {
+    flex: 0 0 75% !important;
+    max-width: 75% !important;
+}
+
+
+
+.descp > .descp_list,
+.descp > .descp_album {
+    /* initial sizes read from variables */
+    flex: 0 0 var(--list-w);
+    max-width: var(--list-w);
+}
+
+/* ensure album column reads the correct variable */
+.descp > .descp_album {
+    flex: 0 0 var(--album-w);
+    max-width: var(--album-w);
+}
