@@ -54,13 +54,13 @@ a {
     text-align: center;
     font-size: 18px;
     height: 70px;
-    color: #a1e92d;
+    color: #48e4b0;
     text-decoration: none;
     transition: 0.3s;
 }
 
 a:hover {
-    color: #ff6f00;
+    color: #ddb72e;
     text-decoration: underline;
 }
 
@@ -72,10 +72,10 @@ a:hover {
     margin: 60px auto 30px auto;
     max-width: 300px;
     height: 70px;
-    border: 5px solid #003366;
-    border-radius: 10px;
+    border:0px;
+    border-radius: 40px;
     padding: 2px;
-    background-color: rgb(84, 105, 97);
+    background-color: rgb(36, 95, 159);
     text-align: center;
 }
 
@@ -121,7 +121,7 @@ footer {
 .descp {
     display: flex;
     justify-content: flex-start;
-    gap: 2.3rem; 
+    gap: 2.4rem; 
 }
 
 
@@ -131,8 +131,7 @@ footer {
     margin: 24px 0;
     padding: 12px 16px;
     padding-left: 20px;
-    list-style: georgian;
-    background: linear-gradient(75deg, #090b5015, #0d225c);
+    background: linear-gradient(75deg, #090b5015, #0d225cd5);
     border-radius: 20px;
     color: #5befb2;
 }
@@ -145,7 +144,7 @@ footer {
     margin: 24px 0;
     padding: 12px 16px;
     padding-left: 20px;
-    background: linear-gradient(75deg,#0c1f52 , #14199a15);
+    background: linear-gradient(75deg,#112252 , #090c6d);
     border-radius: 20px;
     color: #5befb2;
 }
@@ -160,7 +159,7 @@ footer {
 .descp > .descp_list,
 .descp > .descp_album {
     flex: 0 0 45%;
-    max-width: 45%;
+    
 }
 .descp_list {
     margin-left: 4%;
@@ -178,7 +177,7 @@ li {
     margin: 24px auto;
     padding: 4px;
     padding-left: 20px;
-    list-style: georgian;
+    list-style: decimal;
     border-radius: 20px;
     color: #5befb2;
     font-size: large;
@@ -216,4 +215,76 @@ h3 {
     transform: scale(0.8);
     filter: brightness(60%);
 }
-
+@media (max-width: 1080px) {
+    .descp {
+        flex-direction: column-reverse;
+        margin: 0 10%; 
+    }
+    .descp_album {
+        font-size: 15px;
+    }
+    .al-text {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+        text-align: left;
+    }
+    .onthat{
+        font-size: 18px;
+        text-align: left;
+    }
+}
+@media (max-width: 1950px){
+    .descp_album{
+        padding: 0px;
+    }
+    .al-text {
+        font-size: 19px;
+    }
+    .album-cover_1 {
+        max-width: 250px;
+        font-size: 16px;
+    }
+    .Button_Prime {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+        
+    }
+}
+@media (max-width: 1600px){
+    .descp_album{
+        padding: 0px;
+    }
+    .al-text {
+        font-size: 19px;
+    }
+    .album-cover_1 {
+        max-width: 250px;
+        font-size: 16px;
+    }
+    .Button_Prime {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+        
+    }
+    li {
+        height: 105px;
+    }
+    ul  {
+        height: 1700px;
+    }
+}
+@media (max-width: 1300px){
+    li {
+        height: 120px;
+    }
+    ul{
+        height: 1900px;
+    }
+    li ul {
+        margin-bottom: 30px;
+    }
+}
