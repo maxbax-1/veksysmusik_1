@@ -22,29 +22,30 @@ h1 {
 
 .introduction {
     display: flex;
-    text-align: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     border: 0px;
-    margin: 5%;
+    margin: 5% ;
     gap: 2rem;
     align-items: center;
     padding: 0px;
 }
 
 .album-cover {
-    display: flex;
     width: 325px;
     height: 325px;
 }
 
 p {
     font-size: 18px;
-    max-width: 60%;
-    text-align: center;
     margin: 0;
 }
 
-
+.p_f {
+    max-width: 50%;
+}
 
 
 
@@ -120,33 +121,39 @@ footer {
 }
 .descp {
     display: flex;
-    justify-content: flex-start;
-    gap: 2.4rem; 
+    flex-direction: column-reverse;
+    align-items: stretch; 
+    justify-content: center;
+    gap: 2.4rem;
 }
+
+
 
 
 .descp_list ul {
-    border: 4px;
-    width: 100%;
-    margin: 24px 0;
+    width: 55%;          
+    margin: 60px auto; 
     padding: 12px 16px;
-    padding-left: 20px;
-    background: linear-gradient(75deg, #090b5015, #0d225cd5);
+    padding-left: 20px;  
+    background: linear-gradient(75deg, #090b50, #0d225cd5);
     border-radius: 20px;
     color: #5befb2;
+    box-sizing: border-box; 
 }
+
 
 
 
 .descp_album {
-    border: 4px;
-    width: 100%;
-    margin: 24px 0;
+    border: 0px;
+    width: 55%;
+    margin: 80px auto;
     padding: 12px 16px;
     padding-left: 20px;
     background: linear-gradient(75deg,#112252 , #090c6d);
     border-radius: 20px;
     color: #5befb2;
+    
 }
 .al-text{
     text-align: center;
@@ -155,34 +162,47 @@ footer {
     justify-self: center;
 }
 
-
-.descp > .descp_list,
-.descp > .descp_album {
-    flex: 0 0 45%;
     
+
+.audio-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
 }
-.descp_list {
-    margin-left: 4%;
+
+.audio-wrapper audio {
+    width: 95%; 
 }
-.descp_album {
-    margin-right: 4%;
-}
-audio {
-    min-width: 90%;
-}
+
 
 li {
-    background: linear-gradient(75deg, #0f149e59, #0515417c);
+    background: linear-gradient(75deg, #27068ac3, #2703a7c3,   #05006aeb);
+    
     border: 4px;
-    margin: 24px auto;
     padding: 4px;
     padding-left: 20px;
     list-style: decimal;
     border-radius: 20px;
     color: #5befb2;
-    font-size: large;
+    font-size: 20px;
     
 }
+.descp_list li {
+    margin-bottom: 50px; 
+    padding: 8px 12px;   
+    list-style: decimal;
+    border-radius: 12px;
+    color: #5befb2;
+}
+
+
+.Button_Prime {
+    display: flex;     
+    flex-direction: row;    
+    justify-content: center;
+    margin-top: 20px;        
+}
+
 
 h3 {
     color: #5befb2;
@@ -193,10 +213,10 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 0px auto;
     align-content: flex-start;
     border: 0;
-    width: 85%;
+    width: 90%;
     text-align: center;
     gap: 3rem;
 }
@@ -214,77 +234,4 @@ h3 {
 .photo_collage:hover {
     transform: scale(0.8);
     filter: brightness(60%);
-}
-@media (max-width: 1080px) {
-    .descp {
-        flex-direction: column-reverse;
-        margin: 0 10%; 
-    }
-    .descp_album {
-        font-size: 15px;
-    }
-    .al-text {
-        font-size: 18px;
-    }
-    p {
-        font-size: 16px;
-        text-align: left;
-    }
-    .onthat{
-        font-size: 18px;
-        text-align: left;
-    }
-}
-@media (max-width: 1950px){
-    .descp_album{
-        padding: 0px;
-    }
-    .al-text {
-        font-size: 19px;
-    }
-    .album-cover_1 {
-        max-width: 250px;
-        font-size: 16px;
-    }
-    .Button_Prime {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 5px;
-        
-    }
-}
-@media (max-width: 1600px){
-    .descp_album{
-        padding: 0px;
-    }
-    .al-text {
-        font-size: 19px;
-    }
-    .album-cover_1 {
-        max-width: 250px;
-        font-size: 16px;
-    }
-    .Button_Prime {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 5px;
-        
-    }
-    li {
-        height: 105px;
-    }
-    ul  {
-        height: 1700px;
-    }
-}
-@media (max-width: 1300px){
-    li {
-        height: 120px;
-    }
-    ul{
-        height: 1900px;
-    }
-    li ul {
-        margin-bottom: 30px;
-    }
 }
